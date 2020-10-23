@@ -13,8 +13,8 @@ int main() {
   }
   // consider contiguous subsequences, but  change the starting point whenever
   // the current sum becomes negative
-  int current_sum = a[0];
-  int max_sum = a[0];
+  long long current_sum = a[0];
+  long long max_sum = a[0];
   for (int i = 1; i < n; i++) {
     if (current_sum < 0) {
       current_sum = 0;
